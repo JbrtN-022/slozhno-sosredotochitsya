@@ -3,33 +3,38 @@
 .page {
   margin: auto;
   width:var(--l);
-
+background-color: #000028;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .header{
   background-image:url(/images/cover-image-dark.png);
-  display: flex;
-  flex-direction: column;
+  padding: 20px;
 }
 .theme{
   display: flex;
   justify-content: space-between;
 }
 .decorated-zone{
-  margin: auto;
+  margin: 0 auto;
 }
 .header__theme-menu-list{
   display: flex;
   gap:10px;
+  margin: 0 auto;
   list-style-type:none;
 }
 .lamp{
   display: flex;
   align-items: center;
   gap:10px;
+  height: 26px;
 }
 .rec{
   font-family: "IBM Plex mono" ,swap;
+  font-weight:normal;
+  text-transform: uppercase;
+  color: #FF0070;
+  display: contents;
 }
 .circle{
   background: #456BD9;
@@ -42,15 +47,86 @@
   margin-top: 273px;
   font-family: "IBM Plex mono" ,swap;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  text-shadow: 4px 4px rgb(191 57 57 / 100%);
+  text-shadow: 4px 4px #FF0070;
+  color: #DB00FF;
+  left: -20px;
+  position: relative;
+}
+.header_description-container{
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 114px;
+  margin-bottom: 135px;
 }
 .header_description{
-  margin-top: 114px;
+ 
   width: 491px;
   font-family: "IBM Plex mono" ,swap;
   font-weight: bold;
   font-size: 18px;
-  display: flex;
   background-color:#FF0070;
   color: #000028;
 }
+.square{
+  width: 24px;
+  height: 24px;
+  border: 1px #FF0070;
+  position:absolute;
+}
+
+.main-section{
+  padding: 20px;
+}
+.extreme-child{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.first-child-container{
+  width: 648px;
+}
+.main-question-title{
+  font-family: "IBM Plex mono" ,swap;
+  font-weight: bold;
+  color: #FF0070;
+  font-size: 18px;
+  width: 30.66%;
+  margin: 0;
+}
+.main-title{
+  background-color: #FF0070;
+  color: #000028;
+  font-family: "IBM Plex mono" ,swap;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+.main-description{
+  font-family: "IBM Plex mono" ,swap;
+  font-weight: normal;
+  font-size: 18px;
+  color: #F1B2CE;
+  margin: 10px  0 0;
+}
+.description_link{
+  text-shadow:2px 2px #FF0070;
+  text-decoration: none;
+}
+.average-child{
+  margin-top: 80px;
+}
+.average-child-container{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.last-child-description_container{
+  margin-top: 20px;
+}
+ .normal-font{
+  font-weight: normal;   
+ }
+ .last-child-container{
+   width: 648px;
+ }
