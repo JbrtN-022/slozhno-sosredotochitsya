@@ -1,26 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-.body:has(.header__theme-menu-button_type_dark:checked){
-  --main-text-color:#F1B2CE;
-  --main-background-color:#000028 ;
-  --text-title-color:#000028;
-  --text-shadow:#FF0070;
-  --header-title:#DB00FF;
-}
-.body:has(.header__theme-menu-button_type_light:checked){
-  --main-text-color:#353430;
-  --main-background-color: #FFC2E6 ;
-  --text-title-color:#353430;
-  --text-shadow:#FF0070;
-  --header-title:#FF8DCB;
-}
+
 .page {
   margin: auto;
-  width:var(--l);
+  max-inline-size: 1024px;
   background-color: var(--main-background-color);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .header{
-  background-image:url(/images/cover-image-dark.png);
+  background-image:url(/images/cover-image.png);
   padding: 20px;
   background-size: 120%;
   background-position: bottom;
@@ -41,8 +28,8 @@
 }
 .header__theme-menu-button{
   background-color:transparent ;
-  color: var(--main-text-color);
-  font-family: "IBM Plex mono" ,swap;
+  color: var(--text-shadow);
+  font-family: var(--font-family) ,swap;
   font-weight:normal;
   text-transform:lowercase;
   font-size: 18px;
@@ -50,31 +37,27 @@
   border: none;
   padding: 0 13px;
 }
-.header__theme-menu-button_type_dark{
-  border:var(--main-text-color) solid 1px ;
+.header__theme-menu-button_active{
+  pointer-events: none;
+  border:var(--text-shadow) solid 1px ;
   outline: none;
 }
-.lamp{
+.header__rec{
   display: flex;
   align-items: center;
   gap:11px;
 }
 .rec{
-  font-family: "IBM Plex mono" ,swap;
+  font-family: var(--font-family) ,swap;
   font-weight:normal;
   text-transform: uppercase;
-  color: var(--main-text-color);
+  color: var(--text-shadow);
   display: contents;
   font-size: var(--font-descript);
 }
-.circle{
-  background: #456BD9;
-  clip-path: circle(50%);
-  height: 9px;
-  width: 9px;
-}
-.header > .header_title{
-  font-family: "IBM Plex mono" ,swap;
+
+.header_title{
+  font-family: var(--font-family) ,swap;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 4px 4px var(--text-shadow);
   color: var(--header-title);
@@ -92,11 +75,11 @@
 .header_description{
  
   width: 491px;
-  font-family: "IBM Plex mono" ,swap;
+  font-family:var(--font-family),swap;
   font-weight: bold;
-  font-size: var(--font-descript);
-  background-color:var(--main-text-color);
-  color:var(--header-title) ;
+  font-size:18px;
+  background-color:var( --text-shadow);
+  color:var(--main-background-color) ;
 }
 .square{
   width: 24px;
@@ -126,36 +109,37 @@
 }
 
 .main-question-title{
-  font-family: "IBM Plex mono" ,swap;
+  font-family:var(--font-family),swap;
   font-weight: bold;
-  color: var(--main-text-color);
-  font-size:var(--font-descript);
+  color: var(--text-shadow);
+  font-size:18px;
   width: 30.8%;
   margin: 0;
 }
 
 .main-title{
-  background-color: var(--main-text-color);
+  background-color: var(--text-shadow);
   color: var(--main-background-color);
-  font-family: "IBM Plex mono" ,swap;
+  font-family:var(--font-family),swap;
   font-weight: bold;
-  font-size: var(--font-descript);
+  font-size: 18px;
   margin: 0;
   margin-bottom: 10px;
 }
 
 .main-description{
-  font-family: "IBM Plex mono" ,swap;
+  font-family:var(--font-family),swap;
   font-weight: normal;
-  font-size: var(--font-descript);
+  font-size: 18px;
   color:var(--main-text-color);
   margin: 10px  0 0;
   line-height: 130%;
 }
 
 .description_link{
-  text-shadow:2px 2px var(--main-text-color);
+  text-shadow:2px 2px var(--text-shadow);
   text-decoration: none;
+  color: var(--main-text-color);
 }
 
 .average-child-container{
@@ -213,9 +197,9 @@
   margin-top: 44px;
  }  
  .footer-title{
-  font-family: "IBM Plex mono" ,swap;
+  font-family:var(--font-family),swap;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  text-shadow: 4px 4px var(--main-text-color);
+  text-shadow: 4px 4px var(--text-shadow);
   color:var(--header-title);
   display: flex;
   justify-content: center;

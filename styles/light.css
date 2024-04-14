@@ -3,10 +3,43 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-text-color:#353430;
+  --main-background-color: #FFF1F7 ;
+  --text-shadow:#FF0070;
+  --header-title:#FF8DCB;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --main-text-color:#353430;
+  --main-background-color: #FFF1F7 ;
+  --text-shadow:#FF0070;
+  --header-title:#FF8DCB;
+  }
+
+}
+
+.theme_light .header{
+ background-image: url(/images/cover-image-light.png);
+}
+.theme_light .header__rec {
+  display: none;
+}
+.theme_light .header__theme-menu-button_active{
+  border:var(--main-text-color) solid 1px ;
+}
+.theme_light .header__theme-menu-button{
+  color: var(--main-text-color);
+}
+.theme_light .main-title{
+  color: var(--main-text-color);
+  background-color: var(--header-title);
+}
+.theme_light .header_description{
+  color: var(--main-text-color);
+  background-color: var(--header-title);
+}
+.theme_light .main-question-title{
+  color: var(--main-text-color);
 }
