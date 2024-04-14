@@ -10,21 +10,3 @@
  --l: 1024px;
 
 }
-:root.theme-dark {
-  --text_shadow_color:#FF0070;
-  --text_title_color:#DB00FF;
-  --main_color:#000028;
-  --text-description_color:#F1B2CE;
-  --excretory_color:#FF0070;
-
-  @media (prefect-color-scheme:dark) {
-    .page{
-      --text_shadow_color:#FF0070;
-      --text_title_color:#DB00FF;
-      --main_color:#000028;
-      --text-description_color:#F1B2CE;
-      --excretory_color:#FF0070;
-    }
-  }
-  .page.theme-dark
-}
