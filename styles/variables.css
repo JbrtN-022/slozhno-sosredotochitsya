@@ -9,3 +9,44 @@
   --text-shadow:#FF0070;
   --header-title:#DB00FF;
 }
+
+@media (768px<= body < 1024px){
+.page .main-section{
+  max-inline-size: 1024px;
+}
+.header{
+  background-position-x: 100%
+}
+}
+
+@media (375px<= body <768px){
+  .page .main .main-section{
+    max-inline-size: 786px;
+  }
+  .header_description{
+  width:50%;
+}
+.first-child-container{
+  width: 63.37%;
+}
+.average-child-container{
+  display: flex;
+}
+}
+
+@media (body<375px){
+ 
+  .page .main .main-section{
+    max-inline-size: 375px;
+  }
+
+  .header{
+    object-fit: cover;
+    padding: 10px;
+    background-size: co;
+  }
+  .header_description{
+    width:100%;
+  }
+  
+}

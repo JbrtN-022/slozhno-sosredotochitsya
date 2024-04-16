@@ -9,7 +9,7 @@
 .header{
   background-image:url(/images/cover-image.png);
   padding: 20px;
-  background-size: 120%;
+  background-position-y: 100% ;
   background-position: bottom;
 }
 .theme{
@@ -40,6 +40,10 @@
 .header__theme-menu-button_active{
   pointer-events: none;
   border:var(--text-shadow) solid 1px ;
+  outline: none;
+}
+.header__theme-menu-button:hover{
+  border:var(--text-shadow, 0.4) solid 1px ;
   outline: none;
 }
 .header__rec{
@@ -73,7 +77,6 @@
   margin-bottom: 116px;
 }
 .header_description{
- 
   width: 491px;
   font-family:var(--font-family),swap;
   font-weight: bold;
@@ -141,7 +144,14 @@
   text-decoration: none;
   color: var(--main-text-color);
 }
-
+.description_link:hover{
+ outline: var(--main-text-color) solid 1px;
+ border: none;
+}
+ 
+.description_link:focus{
+ border: var(--main-text-color) solid 1px;
+}
 .average-child-container{
   display: grid;
   grid-template-columns:repeat(3, 1fr);

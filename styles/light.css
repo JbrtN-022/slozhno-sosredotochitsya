@@ -29,6 +29,11 @@
 .theme_light .header__theme-menu-button_active{
   border:var(--main-text-color) solid 1px ;
 }
+.theme_light .header__theme-menu-button:hover{
+  border:var(--main-text-color, 0.4) solid 1px ;
+  outline: none;
+}
+
 .theme_light .header__theme-menu-button{
   color: var(--main-text-color);
 }
