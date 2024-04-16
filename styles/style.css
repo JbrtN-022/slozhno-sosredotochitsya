@@ -8,24 +8,21 @@
 }
 .header{
   background-image:url(/images/cover-image.png);
-  padding:0 20px;
   background-position-y: 100% ;
   background-position: bottom;
   display: grid;
 }
-.theme{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 239px;
-}
+
 .decorated-zone{
   margin: 0 auto;
+  display: flex;
+ 
 }
 .header__theme-menu-list{
-  display: flex;
   gap:10px;
   margin: 0 auto;
   list-style-type:none;
+
 }
 .header__theme-menu-button{
   background-color:transparent ;
@@ -48,7 +45,7 @@
   outline: none;
 }
 .header__rec{
-  display: flex;
+  display: contents;
   align-items: center;
   gap:11px;
 }
@@ -57,16 +54,17 @@
   font-weight:normal;
   text-transform: uppercase;
   color: var(--text-shadow);
-  display: contents;
-  font-size: var(--font-descript);
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
 }
 .title{
   font-family:var(--font-family),swap;
   text-shadow: 4px 4px var(--text-shadow);
   color:var(--header-title);
+  line-height: 82.5%;
 }
 .header_title{
-  left:-20px;
   position: relative;
   margin: 0;
 }
@@ -74,8 +72,6 @@
 .header_description-container{
   display: flex;
   justify-content: flex-end; 
-  margin-top: 77px;
-  margin-bottom: 116px;
 }
 .header_description{
   
