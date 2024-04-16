@@ -68,8 +68,7 @@ margin-bottom: 228px;
 .gallery-block{
   grid-template-columns: repeat(3, 1fr);
  }
- .s
- unset{
+ .sunset{
   grid-column: span 2;
  }
 
@@ -150,7 +149,7 @@ margin-bottom: 228px;
  .street{
   grid-column: span 2;
  }
-}
+
 
 
 
