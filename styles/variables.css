@@ -64,18 +64,23 @@ margin-bottom: 228px;
   grid-template-columns: repeat(3, 1fr);
 
 }
+
 .gallery-block{
   grid-template-columns: repeat(3, 1fr);
  }
- .sunset{
+ .s
+ unset{
   grid-column: span 2;
  }
+
  .ice-cream {
   grid-row: span 2;
  }
+
  .tape {
   grid-row: span 2;
  }
+
  .street{
   grid-column: span 2;
  }
