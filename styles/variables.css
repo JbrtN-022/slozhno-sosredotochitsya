@@ -8,45 +8,122 @@
   --main-background-color:#000028 ;
   --text-shadow:#FF0070;
   --header-title:#DB00FF;
+  --title-desktop:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+  --title-phone:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
 }
 
-@media (768px<= body < 1024px){
+@media (768px< width){
+
 .page .main-section{
   max-inline-size: 1024px;
+  padding:0 -20px;
 }
 .header{
-  background-position-x: 100%
+  background-position-x: 100%;
+  padding: 0 20px;
 }
+.title{
+  font-size: var(--title-desktop);
+}
+.average-child-container{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.dual-container {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
-@media (375px<= body <768px){
-  .page .main .main-section{
-    max-inline-size: 786px;
+.extreme-child{
+  grid-template-columns: repeat(3, 1fr);
+
+}
+.gallery-block{
+  grid-template-columns: repeat(3, 1fr);
+ }
+ .sunset{
+  grid-column: span 2;
+ }
+ .ice-cream {
+  grid-row: span 2;
+ }
+ .tape {
+  grid-row: span 2;
+ }
+ .street{
+  grid-column: span 2;
+ }
+}
+
+
+
+@media (375px< width <=768px){
+  .page .main-section{
+    max-inline-size: 768px;
+    padding: 0 -20px;
+  }
+  .header{
+    padding: 0 20px;
   }
   .header_description{
   width:50%;
 }
-.first-child-container{
-  width: 63.37%;
+.title{
+  font-size: var(--title-desktop);
+}
+.dual-container{
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 .average-child-container{
-  display: flex;
+  grid-template-columns: repeat(1, 3fr);
+  display: grid;
+  gap: 20px;
 }
+.gallery-block{
+  grid-template-columns: repeat(3, 1fr);
+ }
+ .sunset{
+  grid-column: span 2;
+ }
+ .ice-cream {
+  grid-row: span 2;
+ }
+ .tape {
+  grid-row: span 2;
+ }
+ .street{
+  grid-column: span 2;
+ }
 }
 
-@media (body<375px){
+
+
+
+
+@media (width <=375px){
  
-  .page .main .main-section{
-    max-inline-size: 375px;
+  .page .main-section{
+    max-inline-size: 335px;
+    padding: 0 -10px;
   }
 
   .header{
-    object-fit: cover;
-    padding: 10px;
-    background-size: co;
+    padding: 0 10px;
   }
   .header_description{
     width:100%;
   }
-  
+  .average-child-container{
+    grid-template-columns: repeat(1, 3fr);
+  }
+  .dual-container {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+  }
+  .title{
+    font-size: var(--title-phone);
+  }
 }
