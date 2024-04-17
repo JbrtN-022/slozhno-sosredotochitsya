@@ -19,7 +19,6 @@
  
 }
 .header__theme-menu-list{
-  gap:10px;
   margin: 0 auto;
   list-style-type:none;
 
@@ -89,8 +88,6 @@
 }
 
 .main{
-  margin-top: 38px;
-  gap: 40px;;
   display: grid;
 }
 .main-section{
@@ -103,12 +100,14 @@
   gap: 20px;
 }
 
-.dual-container{
+.dual-container {
   display: grid;
   gap: 20px;
-  
 }
-
+.dual-container-extreme {
+  display: grid;
+  gap: 20px;
+}
 .main-question-title{
   font-family:var(--font-family),swap;
   font-weight: bold;
