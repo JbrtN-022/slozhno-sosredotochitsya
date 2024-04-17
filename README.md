@@ -1,4 +1,4 @@
 # Сложно-сосредоточиться 
 
-* ссылка на https репозиторий https://github.com/JbrtN-022/slozhno-sosredotochitsya-1.git
+* ссылка на https репозиторий https://github.com/JbrtN-022/slozhno-sosredotochitsya.git
 * Удачной проверки работы ;)
