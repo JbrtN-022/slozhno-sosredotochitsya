@@ -21,12 +21,12 @@
 
 }
 
-.theme_dark .header__rec {
-  display: block;
-}
 .theme_dark .header{
 background-image: url(/images/cover-image-dark.png);
 }
-
+.theme_dark .header__theme-menu-button:hover{
+  border:var(--text-shadow/ 40%) solid 1px ;
+  outline: none;
+}
 
 
