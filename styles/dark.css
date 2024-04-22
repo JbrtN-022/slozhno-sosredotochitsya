@@ -9,6 +9,7 @@
   --main-background-color:#000028 ;
   --text-shadow:#FF0070;
   --header-title:#DB00FF;
+  background-image: url(/images/cover-image-dark.png);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,9 +22,6 @@
 
 }
 
-.theme_dark .header{
-background-image: url(/images/cover-image-dark.png);
-}
 .theme_dark .header__theme-menu-button:hover{
   border:var(--text-shadow/ 40%) solid 1px ;
   outline: none;

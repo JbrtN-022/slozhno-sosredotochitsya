@@ -2,17 +2,15 @@
 
 .page {
   margin: auto;
-  max-inline-size: 1024px;
   background-color: var(--main-background-color);
+  background-position: top;
+  background-image: url(/images/cover-image.png);
+  background-repeat: no-repeat;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .header{
-  min-height: 668px;
   position: relative;
   margin: auto;
-  background-position: center;
-  background-image: url(/images/cover-image.png);
-  background-size: cover;
 }
 .decorated-zone::after{
  position: absolute;
@@ -40,16 +38,12 @@
   cursor: pointer;
   border: none;
   padding: 0 13px;
+  line-height: 150%;
 }
 .header__theme-menu-button_active{
   pointer-events: none;
   border:var(--text-shadow) solid 1px ;
-  outline: none;
-}
-
-.header__rec{
-  align-items: center;
-  gap:11px;
+  
 }
 
 .rec{
@@ -66,7 +60,7 @@
 .rec::after{
   content: "";
   background-color: var(--text-shadow);
-  border-radius: 5px;
+  border-radius: 50%;
   width: 9px;
   height: 9px;
   position: relative;
@@ -95,21 +89,11 @@
   background-color:var( --text-shadow);
   color:var(--main-background-color) ;
 }
-.square{
-  width: 24px;
-  height: 24px;
-  border: 1px var(--main-text-color);
-  position:absolute;
-}
 
 .main{
   display: grid;
   justify-items: center;
 }
-.main-section{
-  padding: 20px;
-}
-
 .extreme-child{
   display: grid;
   justify-content: space-between;
@@ -187,6 +171,7 @@
   position: relative;
   display: grid;
   margin: auto;
+  align-items: center;
  }  
  .footer_title{
   text-shadow: 2px 2px var(--text-shadow);
@@ -198,10 +183,7 @@
 /*///////////hover//////////*/
 
 .description_link:hover{
-  text-decoration:underline;
-  text-decoration-color: var(--main-text-color);
-  text-underline-offset: 5px;
-  text-decoration-thickness:1px ;
+  border-bottom: var(--main-text-color) 1px solid; 
 }
 .header__theme-menu-button:hover{
   border:var(--text-shadow, 40%) solid 1px ;
@@ -214,9 +196,10 @@
 .description_link:focus-visible{
   outline:var(--main-text-color) solid 1px;
 }
-.header__theme-menu-item:focus{
+.header__theme-menu-button:focus{
   border-color: transparent;
+  outline: none;
 }
-.header__theme-menu-item:focus-visible{
-  border-color: transparent;
+.header__theme-menu-button:focus-visible{
+  border-bottom: var(--text-shadow) 1px solid; 
 }

@@ -8,6 +8,7 @@
   --main-background-color: #FFF1F7 ;
   --text-shadow:#FF0070;
   --header-title:#FF8DCB;
+  background-image: url(/images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -20,9 +21,7 @@
 
 }
 
-.theme_light .header{
- background-image: url(/images/cover-image-light.png);
-}
+
 .theme_light .rec {
   color:transparent;
 }
@@ -40,10 +39,13 @@
   text-shadow:2px 2px var(--header-title);
 }
 .theme_light .description_link:hover{
-  text-decoration-color: var(--main-text-color);
+  border-bottom: var(--main-text-color) 1px solid; 
 }
 .theme_light .header__theme-menu-button{
   color: var(--main-text-color);
+}
+.theme_light .header__theme-menu-button:focus-visible{
+  border-bottom: var(--main-text-color) 1px solid; 
 }
 .theme_light .article__title{
   color: var(--main-text-color);
