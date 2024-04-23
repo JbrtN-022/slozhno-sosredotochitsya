@@ -10,22 +10,25 @@
   --header-title:#DB00FF;
   --title-desktop:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
   --title-phone:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --auto-theme: url(/images/cover-image.png);
 }
 
 @media ( width >=1024px){
 
 .page {
   max-inline-size: 1024px;
-  padding:20px;
   background-size: 1024px 768px;
+  padding: 20px;
 }
 .header{
   height: 728px;
 }
 .header__theme-menu-list{
+  list-style-type: none;
   display: flex;
   margin-bottom: 275px;
   gap: 10px;
+  left: 7px;
   justify-content: center;
 }
 .theme{
@@ -40,14 +43,11 @@ margin-bottom: 251px;
   position: absolute;
   left: calc(var(--max-inline-size)-20px);
 }
-.decorated-zone{
-  justify-content: center;
-}
 .decorated-zone::before{
   bottom: 0;
 }
 .decorated-zone::after{
-  right: 0;
+  right:0px;
   top: 0;
 }
 .title{
@@ -116,7 +116,7 @@ margin-bottom: 251px;
 
 
 
-@media (768px< width <1024px){
+@media (768px<= width <1024px){
   .page{
     max-inline-size: 768px;
     padding: 20px;
@@ -215,7 +215,7 @@ margin-bottom: 251px;
 }
 
 
-@media ( width <=768px){
+@media ( width <768px){
  
   .page{
     background-size: 375px 668px;
@@ -263,7 +263,7 @@ margin-bottom: 251px;
     min-width: 355px;
   }
   .header_description-container {
-    margin-top: 50px;
+    margin-top: 57px;
   }
   .main{
     gap:52px;

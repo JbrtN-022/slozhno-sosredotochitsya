@@ -4,66 +4,18 @@
   переключая тему
 */
 .page.theme_light {
-  --main-text-color:#353430;
-  --main-background-color: #FFF1F7 ;
-  --text-shadow:#FF0070;
-  --header-title:#FF8DCB;
-  background-image: url(/images/cover-image-light.png);
+  --main-text-color: #353430;
+  --main-background-color: #FFF1F7;
+  --text-shadow: #FF0070;
+  --header-title: #FF8DCB;
+  --light-theme: url(/images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-  --main-text-color:#353430;
-  --main-background-color: #FFF1F7 ;
-  --text-shadow:#FF0070;
-  --header-title:#FF8DCB;
+    --main-text-color: #353430;
+    --main-background-color: #FFF1F7;
+    --text-shadow: #FF0070;
+    --header-title: #FF8DCB;
   }
-
 }
-
-
-.theme_light .rec {
-  color:transparent;
-}
-.theme_light .rec::after {
-  display: none;
-}
-.theme_light .header__theme-menu-button_active{
-  border:var(--main-text-color) solid 1px ;
-}
-.theme_light .header__theme-menu-button:hover{
-  border:var(--main-text-color, 40%) solid 1px ;
-  outline: none;
-}
-.theme_light .description_link{
-  text-shadow:2px 2px var(--header-title);
-}
-.theme_light .description_link:hover{
-  border-bottom: var(--main-text-color) 1px solid; 
-}
-.theme_light .header__theme-menu-button{
-  color: var(--main-text-color);
-}
-.theme_light .header__theme-menu-button:focus-visible{
-  border-bottom: var(--main-text-color) 1px solid; 
-}
-.theme_light .article__title{
-  color: var(--main-text-color);
-  background-color: var(--header-title);
-}
-.theme_light .header_description{
-  color: var(--main-text-color);
-  background-color: var(--header-title);
-}
-.theme_light .main-question-title{
-  color: var(--main-text-color);
-}
-.theme_light .decorated-zone::after{
-  
-  border-right: var(--main-text-color) 1px solid;
-  border-top: var(--main-text-color) 1px solid;
- }
- .theme_light .decorated-zone::before{
-   border-left: var(--main-text-color) 1px solid;
-   border-bottom: var(--main-text-color) 1px solid;
- }
