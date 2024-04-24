@@ -169,7 +169,7 @@ margin-bottom: 251px;
   margin-bottom:148px ;
 }
 .header__theme-menu-list {
-  gap:14px;
+  gap:12px;
 }
   .title{
   font-size: var(--title-phone);
@@ -234,7 +234,7 @@ margin-bottom: 251px;
   }
   .header__theme-menu-list {
     display: grid;
-    gap: 14px;
+    gap: 12px;
     justify-items: end;
   }
   .main-extreme-title{
@@ -256,7 +256,7 @@ margin-bottom: 251px;
     margin-bottom: 65px;
   }
   .rec{
-    margin-bottom:40px ;
+    margin-bottom:41px ;
   }
   .header_description{
     width:50%;

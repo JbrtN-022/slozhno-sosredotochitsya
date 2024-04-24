@@ -6,6 +6,7 @@
   background-position: top;
   background-image: var(--auto-theme);
   background-repeat: no-repeat;
+  background-image: var(--auto-theme);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .theme_light.page {
@@ -91,7 +92,7 @@
   font-size: 18px;
   display: flex;
   gap: 6px;
-  right: 6px;
+  right: 3px;
   justify-content: flex-end;
 }
 
