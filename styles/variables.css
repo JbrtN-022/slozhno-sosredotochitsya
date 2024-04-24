@@ -13,7 +13,7 @@
   --auto-theme: url(/images/cover-image.png);
 }
 
-@media ( width >=1024px){
+/*@media ( width >=1024px){
 
 .page {
   max-inline-size: 1024px;
@@ -292,4 +292,4 @@ margin-bottom: 251px;
     padding: 10px;
    }
 }
-/*/////убрать//////////*/
+
