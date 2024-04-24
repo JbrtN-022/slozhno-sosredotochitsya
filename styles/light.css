@@ -17,5 +17,6 @@
     --main-background-color: #FFF1F7;
     --text-shadow: #FF0070;
     --header-title: #FF8DCB;
+    --light-theme: url(/images/cover-image-light.png);
   }
 }

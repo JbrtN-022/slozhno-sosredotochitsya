@@ -123,7 +123,7 @@ margin-bottom: 251px;
     background-size:768px 1024px;
   }
   .header{
-    height: 1004px;
+    height: 984px;
   }
   .header__theme-menu-list{
     display: contents;
@@ -154,7 +154,7 @@ margin-bottom: 251px;
 }
 
 .decorated-zone::before{
-  bottom: 20px;
+  bottom: 0;
 }
 .decorated-zone::after{
   top: 0;
@@ -176,7 +176,7 @@ margin-bottom: 251px;
 }
 .main{
   gap: 82px;
-  margin: 60px 0 80px;
+  margin: 80px 0;
 }
   .dual-container{
   grid-column-start: 2;
