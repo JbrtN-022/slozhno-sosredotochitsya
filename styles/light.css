@@ -4,19 +4,32 @@
   переключая тему
 */
 .page.theme_light {
+  --font-family: 'IBM Plex mono';
   --main-text-color: #353430;
   --main-background-color: #FFF1F7;
+  --header-description-color: #353430;
+  --background-title: #FF8DCB;
   --text-shadow: #FF0070;
-  --header-title: #FF8DCB;
-  --light-theme: url(/images/cover-image-light.png);
+  --decorated-zone: #353430;
+  --title-color: #FFC2E6;
+  --background-image: url(../images/cover-image-light.png);
+}
+
+.page.theme_light .rec {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
+    --font-family: 'IBM Plex mono';
     --main-text-color: #353430;
     --main-background-color: #FFF1F7;
     --text-shadow: #FF0070;
     --header-title: #FF8DCB;
-    --light-theme: url(/images/cover-image-light.png);
+    --header-description-color: #353430;
+    --background-title: #FF8DCB;
+    --decorated-zone: #353430;
+    --title-color: #FFC2E6;
+    --background-image: url(../images/cover-image-light.png);
   }
 }

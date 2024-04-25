@@ -1,17 +1,20 @@
-
- /* Переменные для вашего проекта
+/* Переменные для вашего проекта
   и их переопределение под различные устройства*/
 
-:root{
-  --font-family:'IBM Plex mono'; 
-  --main-text-color:#F1B2CE;
-  --main-background-color:#000028 ;
-  --text-shadow:#FF0070;
-  --header-title:#DB00FF;
-  --title-desktop:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
-  --title-phone:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --auto-theme: url(/images/cover-image.png);
+:root {
+  --font-family: 'IBM Plex mono';
+  --main-text-color: #F1B2CE;
+  --main-background-color: #000028;
+  --header-description-color: #000028;
+  --background-title: #FF0070;
+  --text-shadow: #FF0070;
+  --decorated-zone: #FF0070;
+  --title-color: #DB00FF;
+  --title-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --title-phone: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --background-image: url(../images/cover-image-dark.png);
 }
+
 
 /*@media ( width >=1024px){
 
@@ -292,4 +295,3 @@ margin-bottom: 251px;
     padding: 10px;
    }
 }
-
