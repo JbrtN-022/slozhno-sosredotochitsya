@@ -283,19 +283,10 @@
   border-bottom: var(--main-text-color) 1px solid;
 }
 
-/*.theme_light .description_link:hover {
-  border-bottom: var(--main-text-color) 1px solid;
-}*/
-
 .header__theme-menu-button:hover {
   border: var(--text-shadow, 40%) solid 1px;
   outline: none;
 }
-
-/*.theme_dark .header__theme-menu-button:hover {
-  border: var(--text-shadow, 40%) solid 1px;
-  outline: none;
-}*/
 
 /*///////////focus//////////*/
 .description_link:focus {
@@ -321,12 +312,6 @@
 
 /*////адоптация///////////*/
 @media (width >=1024px) {
-
-  .page {
-    /*max-inline-size: 1024px;
-    background-size: 1024px 768px;
-    padding:0 20px;*/
-  }
 
   .header__theme-menu-list {
     list-style-type: none;
