@@ -13,5 +13,5 @@
   --text-shadow:#FF0070;
   --decorated-zone:#FF0070;
   --title-color:#DB00FF;
-  --dark-theme: url(../images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
 }
