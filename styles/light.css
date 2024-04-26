@@ -42,4 +42,8 @@
     --title-color: #FFC2E6;
     --background-image: url(../images/cover-image-light.png);
   }
+
+  .rec {
+    display: none;
+  }
 }

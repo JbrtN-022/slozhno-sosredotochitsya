@@ -15,3 +15,7 @@
   --title-color: #DB00FF;
   --background-image: url(../images/cover-image-dark.png);
 }
+
+.theme_dark .rec {
+  display: flex;
+}
