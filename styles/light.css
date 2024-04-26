@@ -19,6 +19,12 @@
   display: none;
 }
 
+@media (width >=1024px) {
+  .page.theme_light  .header_title{
+    text-shadow: 4px 4px var( --text-shadow);
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --font-family: 'IBM Plex mono';
