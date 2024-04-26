@@ -15,17 +15,13 @@
   --background-image: url(../images/cover-image-dark.png);
 }
 
-.page .rec {
-  display: none;
-}
-
 @media (width >=1024px) {
-  
-  .page  .header_title{
-    text-shadow: 4px 4px var( --text-shadow);
+
+  .page .header_title {
+    text-shadow: 4px 4px var(--text-shadow);
   }
 
-  .page .footer_title{
-    text-shadow: 4px 4px var( --text-shadow);
+  .page .footer_title {
+    text-shadow: 4px 4px var(--text-shadow);
   }
 }

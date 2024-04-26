@@ -304,11 +304,8 @@
   border-bottom: var(--text-shadow) 1px solid;
 }
 
-/*.theme_light .header__theme-menu-button:focus-visible {
-  border-bottom: var(--main-text-color) 1px solid;
-}*/
-
 /*////адоптация///////////*/
+
 @media (width >=1024px) {
 
   .header__theme-menu-list {
@@ -360,8 +357,6 @@
   }
 
 }
-
-
 
 @media (768px<=width <1024px) {
 
@@ -431,19 +426,7 @@
 
 }
 
-
 @media (width <768px) {
-
-  /*.page {
-    background-size: 375px 668px;
-    max-inline-size: 375px;
-    padding: 0 10px;
-    margin: auto;
-  }
-
- .header {
-    padding: 10px 0 0;
-  }*/
 
   .header__theme-menu {
     display: grid;

@@ -5,13 +5,13 @@
 */
 
 .page.theme_dark {
-  --font-family:'IBM Plex mono'; 
-  --main-text-color:#F1B2CE;
-  --main-background-color:#000028 ;
-  --header-description-color:#000028;
-  --background-title:#FF0070;
-  --text-shadow:#FF0070;
-  --decorated-zone:#FF0070;
-  --title-color:#DB00FF;
+  --font-family: 'IBM Plex mono';
+  --main-text-color: #F1B2CE;
+  --main-background-color: #000028;
+  --header-description-color: #000028;
+  --background-title: #FF0070;
+  --text-shadow: #FF0070;
+  --decorated-zone: #FF0070;
+  --title-color: #DB00FF;
   --background-image: url(../images/cover-image-dark.png);
 }
