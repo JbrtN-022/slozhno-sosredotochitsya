@@ -46,7 +46,6 @@
   height: 24px;
   inset-block-start: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   inset-inline-end: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-
 }
 
 .header__theme-menu-button {
@@ -284,7 +283,6 @@
 }
 
 .header__theme-menu-button:hover {
-  border: var(--text-shadow, 40%) solid 1px;
   outline: none;
 }
 

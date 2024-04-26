@@ -27,7 +27,6 @@
   .page.theme_light .footer_title{
     text-shadow: 4px 4px var( --text-shadow);
   }
-  
 }
 
 @media (prefers-color-scheme: light) {
