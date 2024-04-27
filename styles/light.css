@@ -12,6 +12,7 @@
   --text-shadow: #FF0070;
   --decorated-zone: #353430;
   --title-color: #FFC2E6;
+  --outline-color-hover: rgba(50, 49, 45, 0.4);
   --background-image: url(../images/cover-image-light.png);
 }
 
@@ -19,15 +20,6 @@
   display: none;
 }
 
-@media (width >=1024px) {
-  .page.theme_light .header_title {
-    text-shadow: 4px 4px var(--text-shadow);
-  }
-
-  .page.theme_light .footer_title {
-    text-shadow: 4px 4px var(--text-shadow);
-  }
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -40,6 +32,7 @@
     --background-title: #FF8DCB;
     --decorated-zone: #353430;
     --title-color: #FFC2E6;
+    --outline-color-hover: rgba(50, 49, 45, 0.4);
     --background-image: url(../images/cover-image-light.png);
   }
 
