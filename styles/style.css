@@ -35,10 +35,6 @@
   inset-inline-start: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
-.header__theme-menu {
-  justify-self: end;
-}
-
 .decorated-zone::after {
   position: absolute;
   content: "";
@@ -48,6 +44,10 @@
   height: 24px;
   inset-block-start: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   inset-inline-end: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+}
+
+.header__theme-menu {
+  justify-self: end;
 }
 
 .header__theme-menu-list {
