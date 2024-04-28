@@ -317,7 +317,7 @@
   }
 
   .footer_title {
-    text-shadow: 4px 4px var(--text-shadow);
+    text-shadow: 2px 2px var(--text-shadow);
   }
 
 }
